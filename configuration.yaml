@@ -1,8 +1,8 @@
-
 # Loads default set of integrations. Do not remove.
 default_config:
 
 # Text to speech
+#
 tts:
   - platform: google_translate
 
