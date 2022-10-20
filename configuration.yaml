@@ -1,11 +1,9 @@
-# Loads default set of integrations. Do not remove.
 default_config:
 
-# Text to speech
-#
-tts:
-  - platform: google_translate
-
-automation: !include automations.yaml
-script: !include scripts.yaml
+tts: !include tts.yaml
 scene: !include scenes.yaml
+automation: !include automations.yaml
+
+script: !include_dir_named scripts/
+device_tracker: !include_dir_list device_tracker/
+binary_sensor: !include_dir_merge_list binary_sensors/

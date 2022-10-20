@@ -2,6 +2,9 @@
 *.log*
 *_v2.db*
 
+custom_components
+
+
 # Logs
 logs
 *.log
