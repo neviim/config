@@ -7,3 +7,10 @@ automation: !include automations.yaml
 script: !include_dir_named scripts/
 device_tracker: !include_dir_list device_tracker/
 binary_sensor: !include_dir_merge_list binary_sensors/
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.33.0/24
+    - 192.168.15.0/24
+
